@@ -1,0 +1,91 @@
+movi r0 190
+movs r0 
+load r0
+load r8    
+movi r1 200
+movs r1
+load r2   
+movi r9 0
+movi r5 0  
+
+loop2:
+movs r1
+add r0
+subi 1
+movd r6
+load r5
+loop1:
+
+movs r1
+add r8
+subi 1
+movd r7    
+load r3
+movs r5
+sub  r3
+jmpdp changer
+changed:
+movs r8
+subi 1
+movd r8
+jmpdm loop1
+
+
+jmpdu swapper
+swapped:
+movs r0
+subi 1
+movd r0
+movd r8
+jmpdm loop2
+
+jmpdu completed
+changer: 
+movs r7
+movd r6
+movs r3 
+movd r4
+movs r5
+movd r3
+movs r4
+movd r5
+jmpdu changed
+swapper:
+movs r1
+add r0
+subi 1
+load r10
+store r5
+movs r6
+store r10
+jmpdu swapped
+completed:
+stop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

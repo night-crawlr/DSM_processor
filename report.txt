@@ -1,0 +1,43 @@
+question 1
+
+
+answer
+
+1)given that X is stored in 50,i loded it in r1 regisrter 
+2)to make initial fibonacci numbers i kept it in r3,r4 as 1,1 respectively
+3)I made a loop such that it computes r3+r4 and stores in r5
+and shifts r3->r4,r4->r5 and go into loop again
+4)the exit condition is if r5>x exit before exiting it shifts the register so r3 is my answer 
+5)i moved r3 to r5 and stoped
+
+
+
+question 2 we need to find gcd as every box has same num it must divide other two and should be max
+
+answer
+
+1)i kept 1st number in r1,2nd number in r2
+2)i then found least and stored it in r1 by using label"sreehith"
+3)implies big num is in r2,small num is in r1
+4)we generally do hcf by computing remainder of r2 with r1
+5)as we dont have division i computed it by doing repeated subtraction ie r2-r2,r2-2*r2,...
+6)when it become negative i add r1 to it to make it positive
+7)it is remainder i repeat process with r1 as remainder and r2 as old r1
+8)it stops when subtraction become zero i stored it in r5
+
+question 3 we need to sort it
+
+answer
+
+algoritham: first i find the largest number in it and its adress and swap the last element with this max element as i know adress of max i keep that last element in that adress now our world is confined to new problem of size=previoussize-1  i repeat process as when got to fist element it need not get sorted
+
+1)i stored the size given in 190 location in register and also its copy
+2)i stored 200 also 
+3)i assumed max=0 but not yet it adress actually in programm i store it in r6
+4)here loop is order of n square as i take initaly last element as max and iterate over the loop and find real max and replace with last element and next for new 
+5)exit conditions when  no iterations are size
+
+ 
+
+
+

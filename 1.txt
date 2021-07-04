@@ -1,0 +1,25 @@
+movi r1 50                
+movs r1                   
+load r1                   
+movi r3 1                          
+movi r4 1     
+sreehith:                                  
+movs r3 
+add r4
+movd r5
+movs r4
+movd r3
+movs r5
+movd r4
+sub r1
+jmpdp sreehith
+movs r3
+movd r5
+stop
+
+
+
+
+
+
+
